@@ -14,5 +14,5 @@ Suggests: testthat (>= 3.0.0), knitr, rmarkdown
 Config/testthat/edition: 3
 LazyData: true
 VignetteBuilder: knitr
-URL: https://github.com/steviek16/VEMSmooth
+URL: https://github.com/steviek16/VEMSmooth, https://steviek16.github.io/VEMSmooth/
 BugReports: https://github.com/steviek16/VEMSmooth/issues
