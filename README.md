@@ -10,7 +10,13 @@
 coverage](https://codecov.io/gh/steviek16/VEMSmooth/graph/badge.svg)](https://app.codecov.io/gh/steviek16/VEMSmooth)
 <!-- badges: end -->
 
-The goal of VEMSmooth is to …
+**VEMSmooth** implements the Variational Expectation-Maximization (VEM)
+Bayesian Basis Selection method for **Functional Data Analysis (FDA)**.
+It builds upon the work of *da Cruz, de Souza and da Sousa (2024)*,
+providing a fast, scalable Bayesian basis selection alternative.
+
+This package is developed as part of the Data Science 4999z Thesis
+Project at Western University.
 
 ## Installation
 
@@ -18,8 +24,8 @@ You can install the development version of VEMSmooth from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("steviek16/VEMSmooth")
+# install.packages("devtools")
+devtools::install_github("steviek16/VEMSmooth")
 ```
 
 ## Example
@@ -54,3 +60,9 @@ You can also embed plots, for example:
 
 In that case, don’t forget to commit and push the resulting figure
 files, so they display on GitHub and CRAN.
+
+## Key Features
+
+## References
+
+## Citation
