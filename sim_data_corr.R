@@ -1,5 +1,8 @@
 # Simulating data (same number of time points for all curves, same coefficients and the basis used for all curves)
 
+
+
+#parameter values are provided here --> use coef (for mu_beta), sigma (for var_sigma), w (corr decay, stated in the model)
 sim_data_corr <- function(m = 5, times = 100, ordem = 4, K = 10, coef = c(-2,0,1.5,1.5,0,-1,-0.5,-1,0,0), seed = 1234, sigma = 0.1, w = 0.7, basis_type = "B-splines"){
 
   if(basis_type == "B-splines"){
@@ -13,7 +16,7 @@ sim_data_corr <- function(m = 5, times = 100, ordem = 4, K = 10, coef = c(-2,0,1
   }
 
   # Calculate the covariance matrix
-  Cov_i <- computeCovMatrix(Xt, Xt, sigma = sigma, w=w)
+  Cov_i <- calCov(Xt, Xt, sigma = sigma, w=w)
 
   # Generate m error functions from GP
   n.samples <- m

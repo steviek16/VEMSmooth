@@ -1,4 +1,4 @@
-#' expectedTheta - Expected Log-Theta Calculations
+#' helpers - inclusion indicators: theta-related expectation helpers
 #'
 #' @description
 #' Computes E[log(theta)] and E[log(1-theta)] for Beta distributions.
