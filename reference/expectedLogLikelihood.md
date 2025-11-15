@@ -37,7 +37,7 @@ expectedLogLikelihood(
   delta2_values,
   mu_beta_values,
   Sigma_beta,
-  p_values,
+  prob_values,
   psi
 )
 ```
@@ -80,13 +80,13 @@ expectedLogLikelihood(
 
   Posterior covariance array of beta.
 
-- p_values:
-
-  Matrix of inclusion probabilities.
-
 - psi:
 
   Correlation matrix (Ψ).
+
+- p_values:
+
+  Matrix of inclusion probabilities.
 
 ## Value
 
@@ -94,4 +94,4 @@ Numeric expected log-likelihood value.
 
 ## Details
 
-elboTerms - ELBO component functions for VEMSmooth
+helpers - elbo: ELBO component functions for VEMSmooth

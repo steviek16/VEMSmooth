@@ -1,4 +1,4 @@
-# computePsiMatrix - Correlation (Covariance) Matrix
+# helpers - psi
 
 Computes Ψ, the correlation matrix, using an exponential kernel.
 

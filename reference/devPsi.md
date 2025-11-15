@@ -1,4 +1,4 @@
-# devPsi - Derivatives of Correlation Matrix with respect to w
+# psiDerivatives - Derivatives of Correlation Matrix with respect to w
 
 Computes the first and second derivatives of the Ψ correlation matrix
 with respect to the decay parameter w.

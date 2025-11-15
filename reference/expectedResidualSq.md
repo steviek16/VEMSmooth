@@ -1,19 +1,20 @@
-# expectedResiduals - Excpected Squared Residuals and Beta Moments
+# helpers - beta: beta-related expectation helpers
 
-Computes expected residuals and beta2 moments under the variational
-posterior
+Expected squared residuals and beta^2 moments under the variational
+posterior. These are used in the updates of q(sigma^2), q(tau^2), and
+q(Z_ki).
 
 ## Usage
 
 ``` r
-expectedResidualSq(B, i, y, mu, Sigma, p, iter, psi)
+expectedResidualSq(B, i, y, mu, Sigma, prob, iter, psi)
 ```
 
 ## Arguments
 
 - B:
 
-  List of basis matrices.
+  List of basis matrices (B\[i\] is n_i x K).
 
 - i:
 
@@ -21,19 +22,20 @@ expectedResidualSq(B, i, y, mu, Sigma, p, iter, psi)
 
 - y:
 
-  List of observations.
+  List of observations (y\[i\] is length n_i vector).
 
 - mu:
 
-  Matrix of posterior beta means.
+  Matrix of posterior beta means (rows = iterations, cols = beta_k_i).
 
 - Sigma:
 
-  Array of posterior beta covariance matrices.
+  Array of posterior beta covariance matrices (K x K x m).
 
-- p:
+- prob:
 
-  Matrix of inclusion probabilities.
+  Matrix of inclusion probabilities (rows = iterations, cols =
+  beta_k_i).
 
 - iter:
 
@@ -41,8 +43,8 @@ expectedResidualSq(B, i, y, mu, Sigma, p, iter, psi)
 
 - psi:
 
-  Correlation matrix.
+  Correlation matrix for the errors.
 
 ## Value
 
-Numeric expected squared values.
+Numeric expected squared (or summed squared) values.

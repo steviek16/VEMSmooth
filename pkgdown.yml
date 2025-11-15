@@ -3,7 +3,7 @@ pkgdown: 2.2.0
 pkgdown_sha: ~
 articles:
   introduction: introduction.html
-last_built: 2025-11-14T23:56Z
+last_built: 2025-11-15T00:05Z
 urls:
   reference: https://steviek16.github.io/VEMSmooth/reference
   article: https://steviek16.github.io/VEMSmooth/articles

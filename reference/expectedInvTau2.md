@@ -1,4 +1,4 @@
-# expectedInvTerms - Expected Values for Variance Parameters
+# expectedInvTerms - Expected Values for Variance Parameters (sigma and tau)
 
 Computes the expected inverse and logarithmic terms under the
 Inverse-gamm distributions for or τ² and σ².

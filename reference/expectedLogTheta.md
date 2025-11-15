@@ -1,4 +1,4 @@
-# expectedTheta - Expected Log-Theta Calculations
+# helpers - inclusion indicators: theta-related expectation helpers
 
 Computes Elog(theta) and Elog(1-theta) for Beta distributions.
 
